@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<h1>Informacion sobre el producto</h1>
+<form action="http://192.168.1.65/dam-2015/XHTML/post.php" method="POST" enctype="multipart/form-data">
+	<fieldset >
+		<legend> Datos basicos</legend>
+		<label for="">Nombre</label><br>
+		<input type="text" name="nombre"> <br>
+		<label for=""> Descripcion</label> <br>
+		<textarea name="" id="" cols="30" rows="10"></textarea> <br>
+		<label for=""> Foto</label>
+		<input type="file" value="Seleccionar todo"><br>
+		<input type="checkbox" name="checkbox"> <br>
+		<label for="">Añadir contador de vistas</label>
+		
+	</fieldset>
+	<fieldset>
+		<legend> Datos economicos </legend>
+		<label for="">precio</label>
+		<input type="text">
+		<label for="">€</label>
+		<label for="">impuestos</label>
+		<select name="inpuestos[]" id="in"  multiple>
+				<option value="5">%5</option>
+				<option value="10">%10</option>
+				<option value="20">%20</option>
+		</select> <br>
+		<label for="">promocion</label> <br>
+		<input type="radio" name="promocion" value="1" checked=""><br>
+		<label for="">Ninguno</label> <br>
+		<input type="radio" name="promocion" value="2"><br>
+		<label for="">Transporte gratuito</label> <br>
+		<input type="radio" name="promocion" value="3"><br>
+		<label for="">Descuento 5%</label> <br>
+		
+	</fieldset>
+</form>
+	
+</body>
+</html>
