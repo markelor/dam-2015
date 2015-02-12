@@ -1,0 +1,179 @@
+
+*{
+	box-sizing: border-box;
+}
+body {
+	font: 400 9pt/1.6em Arial, Helvetica,sans-serif;
+}
+h1{
+	font-size: 1em;
+	margin-bottom: 30px;
+}
+h1,ul{
+margin: 0;
+padding:0;
+}
+ol,li {
+	list-style: none;
+}
+a
+a:visited
+a:link
+a:active{
+	text-decoration: none;
+	border-style: 1px dotted transparent;
+}
+.wrapper{
+	margin:0 auto;
+	width: 960px;
+}
+.header{
+	background-color: black;
+	color: #fff;
+	padding: 25px 10px;
+	text-align: center;
+}
+.header p{
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+.header a,
+.header a:visited,
+.header a:link,
+.header a:active{
+	color:white;
+	border-color: white;
+}
+.menu a{
+	text-align: none;
+	border-bottom:1px dotted black;
+}
+.menu li{
+	display:inline;
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+}
+.menu{
+	text-transform: lowercase;
+}
+.articilo{
+	margin: 25px 0px;
+}
+.h2{
+	display: block;
+color:#000;
+font-size: 1.1em;	
+}
+.articulo .h2{
+	margin-bottom: 0.25em;
+	text-decoration: none;
+	
+}
+.fecha{
+	float: right;
+}
+.articulo .h2 a{
+	color:black;
+	border-color: black;
+	}
+.cabeceratexto a {
+	border-color: #00E
+}
+.strong{
+	font-weight: bold;
+
+}
+.archive .fecha{
+	display: inline-block;
+	width: 20px;
+	text-align: right;
+	margin-right: 10px;	
+}
+.pie{
+	text-align: center;
+}
+/* Pagina 2*/
+h3, .h3{
+	display: block;
+	font-size: 1.1em;
+	border-bottom: 1px solid black;
+}
+.cabecera{
+	background-color: gray;
+	border: 6px solid gray;
+}
+.pietabla{
+	background-color: gray;
+	border: 6px solid gray;
+}
+.bodytab{
+	border: 6px solid gray;
+}
+.bodytab td{
+	border-bottom:1px solid gray;
+}
+.azul td{
+	color:blue;
+}
+.fleft{
+	float: left;
+}
+.comments .avatar{
+	width: 10%;
+}
+.coments .coments{
+	width: 85%;
+	margin-left: 5%;
+ 
+}
+.img-responsive{
+	max-width: 100%;
+}
+
+.parrafo-titulo a{
+	color:blue;
+
+}
+/* formulario*/
+.label{
+
+}
+.texto{
+	float: left;
+	display: inline-block;
+
+}
+.form input,
+.form textarea
+{
+	border-width: 1px solid black;	
+	padding:5px;
+
+}
+.form-row label
+	.form-row input
+	.form-row textarea{
+		display: block;
+		margin:5px 0;
+
+
+	}
+.form .row{
+	margin-bottom: 10px;
+}
+
+/*
+Para que se vea en linea
+.form-inline label{
+	display: inline-block;
+	width: 30%;
+}
+.form-iline input{
+	display: inline-block;
+}
+*/
+
+
+
+
+
