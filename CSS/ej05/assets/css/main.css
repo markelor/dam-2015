@@ -98,60 +98,44 @@ h3, .h3{
 	display: block;
 	font-size: 1.1em;
 	border-bottom: 1px solid black;
-<<<<<<< HEAD
 }
-=======
+
 
 }/* TABLA*/
 
->>>>>>> b6a9dee2d2dacd44a58863830e48963cfaf9a2a6
+
+.tabla{
+	width: 100%;
+	border-collapse: collapse;
+
+}
+.table-date{
+	border: 3px solid gray;
+}
+.table-date th
+.tabla-date td{
+	padding: 3px 5px;
+}
 .cabecera{
-	background-color: gray;
-	border: 6px solid gray;
+	background-color: #ccc;
+	border: 3px solid #ccc;
+	text-align: left;
+	padding: 3px 5px;
 }
 .pietabla{
-	background-color: gray;
-	border: 6px solid gray;
+	background-color: #ccc;
+	border: 3px solid #ccc;
+	font-weight: bold;
 }
 .bodytab{
-	border: 6px solid gray;
+	border: 3px solid gray;
 }
 .bodytab td{
 	border-bottom:1px solid gray;
 }
 .azul td{
 	color:blue;
-<<<<<<< HEAD
-}
-.fleft{
-	float: left;
-}
-.comments .avatar{
-	width: 10%;
-}
-.coments .coments{
-	width: 85%;
-	margin-left: 5%;
- 
-}
-.img-responsive{
-	max-width: 100%;
-}
 
-.parrafo-titulo a{
-	color:blue;
-
-}
-/* formulario*/
-.label{
-
-}
-.texto{
-	float: left;
-	display: inline-block;
-
-}
-=======
 	}
 
 .parrafo-titulo a{
@@ -197,7 +181,6 @@ h3, .h3{
 }
 /* formulario*/
 
->>>>>>> b6a9dee2d2dacd44a58863830e48963cfaf9a2a6
 .form input,
 .form textarea
 {
@@ -205,31 +188,20 @@ h3, .h3{
 	padding:5px;
 
 }
-<<<<<<< HEAD
-.form-row label
-	.form-row input
-	.form-row textarea{
-		display: block;
-		margin:5px 0;
 
-
-	}
-=======
 .row label,
 .row input,
 .row textarea{
 	display: block;
 	margin:5px 0;
 }
->>>>>>> b6a9dee2d2dacd44a58863830e48963cfaf9a2a6
+
 .form .row{
 	margin-bottom: 10px;
 }
 
-<<<<<<< HEAD
-=======
 
->>>>>>> b6a9dee2d2dacd44a58863830e48963cfaf9a2a6
+
 /*
 Para que se vea en linea
 .form-inline label{
