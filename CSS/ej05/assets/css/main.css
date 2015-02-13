@@ -2,8 +2,9 @@
 *{
 	box-sizing: border-box;
 }
+
 body {
-	font: 400 9pt/1.6em Arial, Helvetica,sans-serif;
+	font: 400 11pt/1.6em Arial, Helvetica,sans-serif;
 }
 h1{
 	font-size: 1em;
@@ -97,7 +98,9 @@ h3, .h3{
 	display: block;
 	font-size: 1.1em;
 	border-bottom: 1px solid black;
-}
+
+}/* TABLA*/
+
 .cabecera{
 	background-color: gray;
 	border: 6px solid gray;
@@ -114,35 +117,51 @@ h3, .h3{
 }
 .azul td{
 	color:blue;
-}
-.fleft{
-	float: left;
-}
-.comments .avatar{
-	width: 10%;
-}
-.coments .coments{
-	width: 85%;
-	margin-left: 5%;
- 
-}
-.img-responsive{
-	max-width: 100%;
-}
+	}
 
 .parrafo-titulo a{
 	color:blue;
+}
+
+/* Comentarios*/
+.nombreComentador{
+	color:blue;
+	border-bottom: 1px dotted blue;
+
+}
+.fechaComentario{
+	font-size: 0.6em;
+}
+
+.imagenComentario{
+	float: left;
+}
+.imagenComentario img{
+	max-width: 100%;
+ 	height: auto;
+
+}
+.comentariosTodos {
+	width: 70%;
+
+
+}
+
+.tituloTexto{
+	width: 85%;
+	margin-left: 10%;
+ 
+}
+/*.img-responsive{
+	max-width: 100%;
+	width: 30%;
+}
+*/
+
 
 }
 /* formulario*/
-.label{
 
-}
-.texto{
-	float: left;
-	display: inline-block;
-
-}
 .form input,
 .form textarea
 {
@@ -150,17 +169,16 @@ h3, .h3{
 	padding:5px;
 
 }
-.form-row label
-	.form-row input
-	.form-row textarea{
-		display: block;
-		margin:5px 0;
-
-
-	}
+.row label,
+.row input,
+.row textarea{
+	display: block;
+	margin:5px 0;
+}
 .form .row{
 	margin-bottom: 10px;
 }
+
 
 /*
 Para que se vea en linea
