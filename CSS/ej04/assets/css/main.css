@@ -1,4 +1,4 @@
-.clearfix:before, .clearfix:after {
+/*.clearfix:before, .clearfix:after {
 
    content: "";
 
@@ -12,6 +12,7 @@ clear:  both;
 .clearfix {
 zoom: 1;
 }
+*/
 
 ul{
   margin: 0;
