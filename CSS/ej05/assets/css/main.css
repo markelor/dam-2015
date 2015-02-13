@@ -2,14 +2,9 @@
 *{
 	box-sizing: border-box;
 }
-<<<<<<< HEAD
-body {
-	font: 400 9pt/1.6em Arial, Helvetica,sans-serif;
-=======
 
 body {
 	font: 400 11pt/1.6em Arial, Helvetica,sans-serif;
->>>>>>> b6a9dee2d2dacd44a58863830e48963cfaf9a2a6
 }
 h1{
 	font-size: 1em;
