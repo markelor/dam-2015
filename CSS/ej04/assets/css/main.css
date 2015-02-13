@@ -31,7 +31,10 @@ ul{
   border:1px solid #eee;
   top:100%;
   left:-1px;
-  width: 200%
+  width: 200%;
+  font-weight: bold;
+  font-style: oblique;
+  text-decoration: blink;
 }
 .menu > li:hover .submenu{
   display: block;
