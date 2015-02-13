@@ -2,8 +2,14 @@
 *{
 	box-sizing: border-box;
 }
+<<<<<<< HEAD
 body {
 	font: 400 9pt/1.6em Arial, Helvetica,sans-serif;
+=======
+
+body {
+	font: 400 11pt/1.6em Arial, Helvetica,sans-serif;
+>>>>>>> b6a9dee2d2dacd44a58863830e48963cfaf9a2a6
 }
 h1{
 	font-size: 1em;
@@ -97,7 +103,13 @@ h3, .h3{
 	display: block;
 	font-size: 1.1em;
 	border-bottom: 1px solid black;
+<<<<<<< HEAD
 }
+=======
+
+}/* TABLA*/
+
+>>>>>>> b6a9dee2d2dacd44a58863830e48963cfaf9a2a6
 .cabecera{
 	background-color: gray;
 	border: 6px solid gray;
@@ -114,6 +126,7 @@ h3, .h3{
 }
 .azul td{
 	color:blue;
+<<<<<<< HEAD
 }
 .fleft{
 	float: left;
@@ -143,6 +156,53 @@ h3, .h3{
 	display: inline-block;
 
 }
+=======
+	}
+
+.parrafo-titulo a{
+	color:blue;
+}
+
+/* Comentarios*/
+.nombreComentador{
+	color:blue;
+	border-bottom: 1px dotted blue;
+
+}
+.fechaComentario{
+	font-size: 0.6em;
+}
+
+.imagenComentario{
+	float: left;
+}
+.imagenComentario img{
+	max-width: 100%;
+ 	height: auto;
+
+}
+.comentariosTodos {
+	width: 70%;
+
+
+}
+
+.tituloTexto{
+	width: 85%;
+	margin-left: 10%;
+ 
+}
+/*.img-responsive{
+	max-width: 100%;
+	width: 30%;
+}
+*/
+
+
+}
+/* formulario*/
+
+>>>>>>> b6a9dee2d2dacd44a58863830e48963cfaf9a2a6
 .form input,
 .form textarea
 {
@@ -150,6 +210,7 @@ h3, .h3{
 	padding:5px;
 
 }
+<<<<<<< HEAD
 .form-row label
 	.form-row input
 	.form-row textarea{
@@ -158,10 +219,22 @@ h3, .h3{
 
 
 	}
+=======
+.row label,
+.row input,
+.row textarea{
+	display: block;
+	margin:5px 0;
+}
+>>>>>>> b6a9dee2d2dacd44a58863830e48963cfaf9a2a6
 .form .row{
 	margin-bottom: 10px;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> b6a9dee2d2dacd44a58863830e48963cfaf9a2a6
 /*
 Para que se vea en linea
 .form-inline label{
