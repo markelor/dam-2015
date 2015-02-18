@@ -22,14 +22,14 @@
 
 /* ANIMACIONES Y TRANSFORMACIONES */
 .hour{
-     animation-name:segundos;
-     animation-duration: 21600s;
+     animation-name:reloj;
+     animation-duration: 43200s;
     animation-iteration-count:infinite;
     animation-timing-function: steps(60,end);
     
 }
 .minute{
-     animation-name:segundos;
+     animation-name:reloj;
      animation-duration: 3600s;
     animation-iteration-count:infinite;
     animation-timing-function: steps(60,end);
@@ -37,14 +37,14 @@
 }
 
 .second{
-    animation-name:segundos;
+    animation-name:reloj;
     animation-duration: 60s;
     animation-iteration-count:infinite;
     animation-timing-function: steps(60,end);
     
 }
 
-@keyframes segundos {
+@keyframes reloj {
      from {
         transform:rotate(0deg) ;
     }
@@ -55,27 +55,3 @@
     }
 
 }
-
-@keyframes minutos {
-     from {
-        transform:rotate(0deg) ;
-    }
-   
- 
-    to {
-        transform:rotate(360deg) ;
-    }
-
-}
-@keyframes horas {
-     from {
-        transform:rotate(0deg) ;
-    }
-   
- 
-    to {
-        transform:rotate(360deg) ;
-    }
-
-}
-
