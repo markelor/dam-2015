@@ -18,6 +18,11 @@
         //calcular factorial con for
 
         var calcularFactorial = function(n) {
+            if(n&& typeof n==="number" && n>0){
+
+            }else{
+                factorial=false;
+            }
             var factorial=1;
             for (var i = 1; n != i-1; i++) {
                 factorial= factorial*i;
