@@ -5,6 +5,8 @@
         //
         var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
         ok = false;
+        //Expresion regular para DNI
+        //regular=/^[0-9]{8}[a-zA-Z]$/.test(dni);
         if (dni && typeof dni === "string" && dni.length === 9) {
             var num = parseInt(dni);
             if (num >= 0 && num <= 99999999) {
@@ -16,7 +18,6 @@
 
 
         }
-
 
         return ok;
     };
