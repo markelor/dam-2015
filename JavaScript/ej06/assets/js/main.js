@@ -1,12 +1,12 @@
 (function() {
     //Definir jerarquia
-function Persona(nombre,edad,genero,objDetalles){
+function Persona(nombre,edad,genero){
     this.nombre=nombre;
     this.edad=edad;
     this.genero=genero;
     this.objDetalles= function(){};
 }
-function Estudiante(nombre,edad,genero,objDetalles,curso,grupo,registrar){
+function Estudiante(nombre,edad,genero,curso,grupo){
     this.base=Persona;
     this.base=(nombre,edad,genero,objDetalles);
     this.curso=curso;
@@ -15,7 +15,7 @@ function Estudiante(nombre,edad,genero,objDetalles,curso,grupo,registrar){
 }
 Estudiante.prototype=new Persona;
 
-function Profesor(nombre,edad,genero,objDetalles,nivel,asignar){
+function Profesor(nombre,edad,genero,nivel,asignatura){
     this.base=Persona;
     this.base=(nombre,edad,genero,objDetalles);
     this.asignatura=asignatura;
