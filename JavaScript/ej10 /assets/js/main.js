@@ -1,7 +1,9 @@
 window.onload=function(){
 	var enlace=document.querySelectorAll(".enlace");
 	span=document.querySelectorAll(".adicional.oculto");
-	var muestra= function(){
+
+	var muestra= function(e){
+		e.preventDefault();
 		if(span.length){
 			console.log(span[0].classList.remove("oculto"));
 		}
