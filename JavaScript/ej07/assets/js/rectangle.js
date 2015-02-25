@@ -10,20 +10,20 @@ App.Model.Rectangle = (function() {
         //CALL= Sirven para cambiar el contexto de this,
         // en el this pasaremos el parametro que queramos, iyectando desde fuera
         //BIND=Primero se le pasa el this
-        App.Model.Shape.call(this, x, y, lado2);
+        App.Model.Square.call(this, x, y,lado);
         //ifternario
         _lado2 = (typeof lado2 === "number") ? lado2 : 0;
     }
 
     //Indicamos el "padre"
-    Rectangle.prototype = Object.create(App.Model.Shape.prototype);
+    Rectangle.prototype = Object.create(App.Model.Square.prototype);
     Rectangle.prototype.constructor = Rectangle;
 
-    Rectangle.prototype.getLado = function() {
+    Rectangle.prototype.getLado2 = function() {
         return _lado2;
 
     };
-    Rectangle.prototype.setLado = function(lado) {
+    Rectangle.prototype.setLado2 = function(lado) {
         _lado2 = (typeof lado2 === "number") ? lado2 : _lado2;
 
     };
