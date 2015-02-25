@@ -1,28 +1,21 @@
 (function() {
-    //Definir jerarquia
-function Persona(nombre,edad,genero){
-    this.nombre=nombre;
-    this.edad=edad;
-    this.genero=genero;
-    this.objDetalles= function(){};
-}
-function Estudiante(nombre,edad,genero,curso,grupo){
-    this.base=Persona;
-    this.base=(nombre,edad,genero,objDetalles);
-    this.curso=curso;
-    this.grupo=grupo;
-    this.registrar=function(){};
-}
-Estudiante.prototype=new Persona;
+    //Definir jerarquia;
+    var p1 = new App.Model.Persona("markel", 24, "m");
+    console.log(p1.getNombre());
+    console.log(p1.getEdad());
+    console.log(p1.getGenero());
+    console.log(p1);
 
-function Profesor(nombre,edad,genero,nivel,asignatura){
-    this.base=Persona;
-    this.base=(nombre,edad,genero,objDetalles);
-    this.asignatura=asignatura;
-    this.nivel=nivel;
-    this.asignar=function(){};
-}
-Profesor.prototype=new Persona;
+    var e1 = new App.Model.Estudiante("markel", 24, "m", 2, 1);
+    console.log(e1.getNombre());
+    console.log(e1.getEdad());
+    console.log(e1.getGenero());
+    console.log(e1.getCurso());
+    console.log(e1.getGrupo());
+    console.log(e1);
+
+
+
 
 
 })();
