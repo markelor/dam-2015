@@ -4,6 +4,7 @@ window.onload = function() {
     console.log("numero de enlaces:" + enlaces.length);
     enlaces = document.querySelectorAll("a");
     console.log("numero de enlaces:" + enlaces.length);
+
     console.log(enlaces[enlaces.length - 2].href);
     enlaces = document.querySelectorAll('a[href="http://prueba"]');
     console.log(enlaces);
@@ -11,7 +12,7 @@ window.onload = function() {
 
     var count = 0;
     for (var i = enlaces.length - 1; i >= 0; i--) {
-        if (enlaces.item(i).href === "http://prueba/") {
+        if (enlaces.item(i).href === "http://prueba") {
             count++;
         }
 
@@ -22,7 +23,7 @@ window.onload = function() {
         enlaces = parrafos[2].querySelectorAll("a");
     }
 
-    enlaces = document.querySelectorAll("body > p > a:nth-child(3)");
+    enlaces = document.querySelectorAll("body > p:nth-child(3)");
     console.log(enlaces.length);
 
 };
