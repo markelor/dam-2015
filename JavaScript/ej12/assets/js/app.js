@@ -1,6 +1,6 @@
-window.onload= function(){
+window.onload = function() {
 
-	document.getElementById('registro').validate();
+    var form = document.getElementById('registro');
+    form.validate();
 
-}; 
-
+};
