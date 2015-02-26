@@ -1,36 +1,52 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!-- saved from url=(0063)http://www.arkaitzgarro.com/javascript/snippets/cap18/ej17.html -->
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- saved from url=(0063)http://www.arkaitzgarro.com/javascript/snippets/cap18/ej21.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Ejercicio 21 - Validación de formularios</title>
 
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-    <title>Ejercicio 17 - DOM básico y atributos XHTML</title>
-</head>
+    <style type="text/css">
+    body {font-family: arial, helvetica;}
+    form {
+        width: 600px;
+        margin: 20px auto 0 auto;
+    }
+    label {
+        float: left;
+        width: 200px;
+        font-weight: bold;
+    }
+    label[for="registro_condiciones"] {
+        float: none;
+    }
+    input[type="text"],
+    input[type="password"],
+    textarea {
+        width: 360px;
+    }
+    input[type="checkbox"] {
+        margin-left: 200px;
+    }
+    input[type="submit"] {
+        margin: 20px 0 0 200px;
+        display: block;
+    }
+    </style>
+<style type="text/css"></style></head>
 
 <body>
-    <div>
-        <p id="1">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere vitae, rutrum et, luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices porttitor, pede. Nullam sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, semper quis, faucibus ut, rhoncus non, mi. Duis pellentesque, felis eu adipiscing ullamcorper, odio urna consequat arcu, at posuere ante quam non dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.
-        </p>
-        <a href="http://www.arkaitzgarro.com/javascript/snippets/cap18/ej17.html#" id="a1">Ocultar contenidos</a>
-    </div>
-    <br>
-    <div>
-        <p id="2">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere vitae, rutrum et, luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices porttitor, pede. Nullam sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, semper quis, faucibus ut, rhoncus non, mi. Duis pellentesque, felis eu adipiscing ullamcorper, odio urna consequat arcu, at posuere ante quam non dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.
-        </p>
-        <a href="http://www.arkaitzgarro.com/javascript/snippets/cap18/ej17.html#" id="a2">Ocultar contenidos</a>
-    </div>
-    <br>
-    <div>
-        <p id="3">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere vitae, rutrum et, luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices porttitor, pede. Nullam sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, semper quis, faucibus ut, rhoncus non, mi. Duis pellentesque, felis eu adipiscing ullamcorper, odio urna consequat arcu, at posuere ante quam non dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.
-        </p>
-        <a href="http://www.arkaitzgarro.com/javascript/snippets/cap18/ej17.html#" id="a3">Ocultar contenidos</a>
-    </div>
-    <script src="assets/js/main.js"></script>
+    <form action="http://www.arkaitzgarro.com/javascript/snippets/cap18/servidor.php" method="POST" id="registro">
+        <fieldset>
+            <legend>Registro</legend>
+            <label for="registro_nombre">Nombre:</label><input type="text" name="nombre" id="registro_nombre">
+            <label for="registro_apellidos">Apellido:</label><input type="text" name="apellido" id="registro_apellido">
+            <label for="registro_email">Email:</label><input type="text" name="email" id="registro_email">
+            <label for="registro_password">Password:</label><input type="password" name="password" id="registro_password">
+            <label for="registro_comentarios">Comentarios:</label><textarea name="comentarios" id="registro_comentarios" rows="10"></textarea>
+            <input type="checkbox" name="condiciones" id="registro_condiciones" value="1"><label for="registro_condiciones">Acepto las condiciones del servicio.</label>
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+    <script type="text/javascript" src="./Ejercicio 21 - Validación de formularios_files/validador.js"></script>
+    <script type="text/javascript" src="./Ejercicio 21 - Validación de formularios_files/code.js"></script>
 
-</body>
-
-</html>
+</body></html>
