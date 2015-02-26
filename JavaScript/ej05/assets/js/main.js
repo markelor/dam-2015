@@ -1,12 +1,11 @@
 (function() {
 
-
     //calcular minuscula
 
     var calcularMinuscula = function(palabra) {
         minuscula = true;
 
-        if (typeof n === "string") {
+        if (typeof palabra === "string") {
             if (palabra === palabra.toLowerCase()) {
                 minuscula = "solo minuscula";
 
