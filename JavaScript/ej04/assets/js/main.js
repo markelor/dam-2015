@@ -5,7 +5,7 @@
 
     var esPar = function(num) {
         var par = true;
-        if(n&& typeof n==="number"){
+        if(num&& typeof num==="number"){
             par="escribe un numero";
             }
 
