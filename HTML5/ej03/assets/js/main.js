@@ -3,7 +3,7 @@ window.onload = function() {
     var input = document.querySelectorAll("input, textarea"),
         storage = sessionStorage,
         //si queremos que funcione en local
-       //storage=localStorage;
+        //storage=localStorage;
         prefix = "ej03_prefix_";
 
     function saveText() {
@@ -16,7 +16,7 @@ window.onload = function() {
     }
     var showData = function(key, value) {
         for (var i = input.length - 1; i >= 0; i--) {
-            var name = key.replace(prefix,'');
+            var name = key.replace(prefix, '');
             if (input.item(i).namme === name) {
                 input.item(i).value = value;
             }
