@@ -7,7 +7,9 @@
     };
     //APP.DB.insert(tweet);
     var success=(function(datos){
+        console.log("Ver datos");
         console.log(datos);
     });
+
     APP.DB.getAll(success);
 })();

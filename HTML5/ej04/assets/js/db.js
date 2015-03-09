@@ -47,15 +47,16 @@ APP.DB=(function(){
 	};
 
 	var getAll=function(success){
-		var sql= "SELECT * FROM tweets ORDER BY created_at;";
+		
+		var sql= "SELECT * FROM tweets;";
 		db.transaction(function(tx){	
-			tx.esecuteSql(sql,[], function(tx,results){
+			tx.executeSql(sql,[], function(tx,results){
 				console.log(results.rows);
-				var arr=[];
-
-				for (var i = results.rows.length; i>=0; i--) {
-					console.log(results.rows.item(i));
-					arr.push(results.rows.item(i));
+				var datos=[];
+				for (var i = results.rows.length; i>0; i--) {
+					console.log(results.rows.length);
+					//console.log(results.rows.item(i-1));
+					datos.push(results.rows.item(i-1));
 				}
 				success(datos);
 			}, function(txt,error){
@@ -67,6 +68,7 @@ APP.DB=(function(){
 
 	return{
 		//puede ir con comillas
-		insert:insert
+		//insert:insert
+		getAll:getAll
 	};
 })();
