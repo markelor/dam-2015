@@ -13,8 +13,8 @@ function getPrimes(max) {
     return primes;
 }
 
-this.addeventListener('messsage', function() {
+    this.addEventListener('message', function(e) {
     var primes = getPrimes(e.data);
-    this.postMessage(primos);
+    this.postMessage(primes);
 
 });
