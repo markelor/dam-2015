@@ -1,47 +1,47 @@
 $(function() {
-
     var $provincias = $('#provincias');
     var $municipios = $('#municipios');
-    var fillSelect = function($select, options) {
+
+    var fillSelect = function($select, values) {
+        var options = [];
         for (var i in values) {
-            options.push(new Option(provincias[i], i));
+            options.push(new Option(values[i], i));
         }
-        $provincias.children().remove();
-        $provincias.append(options);
-        $provincias.removeAttr('disabled');
+
+        $select.children().remove();
+        $select.append(options);
+        $select.removeAttr('disabled');
+
+
     };
 
-    $.getJSON('assets/servidor/cargaProvinciasJSON.php', null, function(provincias){
+     $.getJSON('assets/servidor/cargaProvinciasJSON.php', null, function(provincias) {
+        fillSelect($provincias, provincias);
+        console.log("data");
 
-    	fillSelect($provincias,provincias);
-    
     });
+
+
+
+
     $provincias.on('change', function(e) {
-        var cp = $provincias.val();
-        $ajax('assets/servidor/cargaMunicipiosJSON.php', {
+
+        var provincias = $provincias.val();
+        $.ajax('assets/servidor/cargaMunicipiosJSON.php', {
+
             method: 'POST',
             data: {
-                provincia: cp
+
+                provincia: provincias
+
             },
-            dataType: 'json',
+
+            dataType: 'json', //convierte lo que viene del servidor en json, misnmo nombre que en el servidor
             success: function(municipios) {
-            	fillSelect($municipios,municipios);
-                console.log(municipios);
+                fillSelect($municipios, municipios);
             }
 
         });
-
     });
 
-
-    $.getJSON('assets/servidor/cargaMunicipiosJSON.php', null, function(data) {
-        $municipios.text(data);
-
-    });
 });
-
-/*var options=[];
-//for
-options.push(new Option(provincias[cp],cp));
-$provincias.append(option);
-*/
